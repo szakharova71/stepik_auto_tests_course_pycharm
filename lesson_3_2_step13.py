@@ -28,7 +28,7 @@ class TestRegister(unittest.TestCase):
         # с помощью assert проверяем, что ожидаемый текст совпадает с текстом на странице сайта
         self.assertEqual(welcome_text1, "Congratulations! You have successfully registered!", "Error message")
 
-    def test_checkreg2 (self):
+    def test_checkreg2 (self): #expected to fail
         link = "http://suninjuly.github.io/registration2.html"
         browser = webdriver.Chrome()
         browser.implicitly_wait(5)
